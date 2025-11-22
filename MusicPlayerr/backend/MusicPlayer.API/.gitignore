@@ -1,0 +1,12 @@
+bin/
+obj/
+*.user
+*.suo
+*.cache
+appsettings.Development.json
+uploads/
+.vs/
+.env
+.env.local
+
+
