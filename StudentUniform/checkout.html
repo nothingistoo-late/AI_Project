@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <title>Thanh toán - EDU Uniform</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body data-page="checkout">
+  <header id="site-header"></header>
+
+  <main>
+    <nav class="breadcrumb" aria-label="breadcrumb">
+      <ol>
+        <li><a href="index.html">Trang chủ</a></li>
+        <li><a href="cart.html">Giỏ hàng</a></li>
+        <li>Thanh toán</li>
+      </ol>
+    </nav>
+
+    <section class="page-header">
+      <h1>Thanh toán</h1>
+      <p>Điền thông tin để hoàn tất đơn hàng (mô phỏng).</p>
+    </section>
+
+    <section class="checkout-section">
+      <form id="checkout-form" class="checkout-form" novalidate>
+        <div class="form-group">
+          <label for="fullName">Họ và tên</label>
+          <input type="text" id="fullName" name="fullName" required aria-required="true" />
+          <span class="error-message" id="error-fullName"></span>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email liên hệ</label>
+          <input type="email" id="email" name="email" required aria-required="true" />
+          <span class="error-message" id="error-email"></span>
+        </div>
+
+        <div class="form-group">
+          <label for="address">Địa chỉ giao hàng</label>
+          <textarea id="address" name="address" rows="3" required aria-required="true"></textarea>
+          <span class="error-message" id="error-address"></span>
+        </div>
+
+        <div class="form-group">
+          <label for="paymentMethod">Phương thức thanh toán</label>
+          <select id="paymentMethod" name="paymentMethod" required aria-required="true">
+            <option value="">-- Chọn phương thức --</option>
+            <option value="cod">Thanh toán khi nhận hàng (COD)</option>
+            <option value="bank">Chuyển khoản ngân hàng (mô phỏng)</option>
+          </select>
+          <span class="error-message" id="error-paymentMethod"></span>
+        </div>
+
+        <div class="form-group">
+          <label for="note">Ghi chú (tuỳ chọn)</label>
+          <textarea id="note" name="note" rows="2"></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Xác nhận đặt hàng</button>
+        <p class="small-note">* Đây là trang thanh toán mô phỏng, không kết nối cổng thanh toán thật.</p>
+      </form>
+
+      <aside class="checkout-summary">
+        <h2>Tóm tắt đơn hàng</h2>
+        <ul id="checkout-summary-list">
+          <!-- JS render short cart summary -->
+        </ul>
+        <p><strong>Tổng cộng:</strong> <span id="checkout-total">0 đ</span></p>
+      </aside>
+    </section>
+  </main>
+
+  <footer id="site-footer"></footer>
+
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+  <script src="js/data.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="js/main.js"></script>
+  <!-- End of checkout.html -->
+</body>
+</html>

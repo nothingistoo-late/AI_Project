@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <title>Trang chủ - Đồng phục học sinh EDU Uniform</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body data-page="home">
+  <header id="site-header"></header>
+
+  <main>
+    <nav class="breadcrumb" aria-label="breadcrumb">
+      <ol>
+        <li><a href="index.html">Trang chủ</a></li>
+      </ol>
+    </nav>
+
+    <section class="hero">
+      <div class="hero-content">
+        <h1>EDU Uniform - Đồng phục học sinh chất lượng cao</h1>
+        <p>Giải pháp đồng phục chuyên nghiệp cho Mầm non, Tiểu học, THCS, đơn hàng thiết kế riêng và phụ kiện.</p>
+        <a href="uniform-primary.html" class="btn btn-primary">Khám phá bộ sưu tập</a>
+      </div>
+      <div class="hero-image">
+        <img src="https://via.placeholder.com/480x320?text=EDU+Uniform" alt="Học sinh mặc đồng phục gọn gàng" />
+      </div>
+    </section>
+
+    <section class="category-section">
+      <h2>Danh mục nổi bật</h2>
+      <div class="category-grid">
+        <article class="category-card">
+          <h3>Đồng phục Tiểu học</h3>
+          <p>Áo sơ mi, quần âu, váy kẻ caro cho học sinh Tiểu học.</p>
+          <a href="uniform-primary.html" class="btn btn-outline">Xem sản phẩm</a>
+        </article>
+        <article class="category-card">
+          <h3>Đồng phục THCS</h3>
+          <p>Thiết kế trẻ trung, lịch sự, phù hợp lứa tuổi THCS.</p>
+          <a href="uniform-secondary.html" class="btn btn-outline">Xem sản phẩm</a>
+        </article>
+        <article class="category-card">
+          <h3>Đồng phục Mầm non</h3>
+          <p>Chất liệu mềm mại, an toàn cho bé.</p>
+          <a href="uniform-kindergarten.html" class="btn btn-outline">Xem sản phẩm</a>
+        </article>
+        <article class="category-card">
+          <h3>Thiết kế riêng</h3>
+          <p>Tư vấn & may đo theo nhận diện thương hiệu của trường.</p>
+          <a href="custom-orders.html" class="btn btn-outline">Tìm hiểu thêm</a>
+        </article>
+        <article class="category-card">
+          <h3>Phụ kiện</h3>
+          <p>Cà vạt, nơ, dây lưng, mũ lưỡi trai, tất vớ...</p>
+          <a href="accessories.html" class="btn btn-outline">Xem phụ kiện</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="product-section">
+      <div class="section-header">
+        <h2>Sản phẩm mới</h2>
+        <p>Hiển thị tối thiểu 6 sản phẩm, có nút "Xem thêm".</p>
+      </div>
+      <div id="product-list" class="product-grid" aria-live="polite">
+        <!-- JS render products -->
+      </div>
+      <div class="load-more-wrapper">
+        <button id="load-more-btn" class="btn btn-secondary">Xem thêm sản phẩm</button>
+      </div>
+    </section>
+  </main>
+
+  <footer id="site-footer"></footer>
+
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+  <script src="js/data.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="js/main.js"></script>
+  <!-- End of index.html -->
+</body>
+</html>

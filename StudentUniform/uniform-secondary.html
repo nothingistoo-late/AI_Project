@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <title>Đồng phục THCS - EDU Uniform</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body data-page="secondary">
+  <header id="site-header"></header>
+
+  <main>
+    <nav class="breadcrumb" aria-label="breadcrumb">
+      <ol>
+        <li><a href="index.html">Trang chủ</a></li>
+        <li>Đồng phục THCS</li>
+      </ol>
+    </nav>
+
+    <section class="page-header">
+      <h1>Đồng phục THCS</h1>
+      <p>Đồng phục hiện đại, lịch sự cho học sinh THCS.</p>
+    </section>
+
+    <section class="product-section">
+      <div class="section-header">
+        <h2>Sản phẩm THCS</h2>
+      </div>
+      <div id="product-list" class="product-grid" aria-live="polite">
+        <!-- JS render secondary products -->
+      </div>
+      <div class="load-more-wrapper">
+        <button id="load-more-btn" class="btn btn-secondary">Xem thêm</button>
+      </div>
+    </section>
+  </main>
+
+  <footer id="site-footer"></footer>
+
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+  <script src="js/data.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="js/main.js"></script>
+  <!-- End of uniform-secondary.html -->
+</body>
+</html>

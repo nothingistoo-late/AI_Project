@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <title>Giỏ hàng - EDU Uniform</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body data-page="cart">
+  <header id="site-header"></header>
+
+  <main>
+    <nav class="breadcrumb" aria-label="breadcrumb">
+      <ol>
+        <li><a href="index.html">Trang chủ</a></li>
+        <li>Giỏ hàng</li>
+      </ol>
+    </nav>
+
+    <section class="page-header">
+      <h1>Giỏ hàng của bạn</h1>
+      <p>Kiểm tra sản phẩm, cập nhật số lượng hoặc xóa khỏi giỏ.</p>
+    </section>
+
+    <section class="cart-section">
+      <div class="cart-table-wrapper">
+        <table class="cart-table">
+          <thead>
+            <tr>
+              <th>Sản phẩm</th>
+              <th>Size</th>
+              <th>Đơn giá</th>
+              <th>Số lượng</th>
+              <th>Thành tiền</th>
+              <th>Thao tác</th>
+            </tr>
+          </thead>
+          <tbody id="cart-items">
+            <!-- JS render cart items -->
+          </tbody>
+        </table>
+      </div>
+
+      <div class="cart-summary">
+        <p><strong>Tổng cộng:</strong> <span id="cart-total">0 đ</span></p>
+        <div class="cart-summary-actions">
+          <a href="index.html" class="btn btn-outline">Tiếp tục mua sắm</a>
+          <a href="checkout.html" class="btn btn-primary">Thanh toán</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="site-footer"></footer>
+
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+  <script src="js/data.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="js/main.js"></script>
+  <!-- End of cart.html -->
+</body>
+</html>

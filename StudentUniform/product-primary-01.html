@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <title>Chi tiết sản phẩm - Tiểu học 01 - EDU Uniform</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body data-page="product-detail" data-product-id="p1">
+  <header id="site-header"></header>
+
+  <main>
+    <nav class="breadcrumb" aria-label="breadcrumb">
+      <ol>
+        <li><a href="index.html">Trang chủ</a></li>
+        <li><a href="uniform-primary.html">Đồng phục Tiểu học</a></li>
+        <li id="breadcrumb-product-name">Sản phẩm Tiểu học 01</li>
+      </ol>
+    </nav>
+
+    <section class="product-detail" aria-labelledby="product-name">
+      <div class="product-gallery">
+        <img id="main-image" src="https://via.placeholder.com/480x320?text=Primary+01" alt="Hình sản phẩm" />
+        <div class="thumbnail-row" id="thumbnail-row">
+          <!-- JS render thumbnails -->
+        </div>
+      </div>
+      <div class="product-info">
+        <h1 id="product-name">Đồng phục Tiểu học 01</h1>
+        <p id="product-category" class="product-category">Tiểu học</p>
+        <p id="product-price" class="product-price">0 đ</p>
+        <p id="product-description">
+          Mô tả sản phẩm.
+        </p>
+
+        <form id="add-to-cart-form" class="product-form">
+          <div class="form-group">
+            <label for="size">Chọn size</label>
+            <select id="size" name="size" required>
+              <option value="">-- Chọn size --</option>
+              <option value="S">S</option>
+              <option value="M">M</option>
+              <option value="L">L</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="quantity">Số lượng</label>
+            <input type="number" id="quantity" name="quantity" min="1" value="1" required />
+          </div>
+
+          <div class="product-actions">
+            <button type="submit" class="btn btn-primary">Thêm vào giỏ</button>
+            <a href="cart.html" class="btn btn-secondary">Xem giỏ hàng</a>
+          </div>
+
+          <p class="product-stock" id="product-stock"></p>
+        </form>
+
+        <div class="product-meta-links">
+          <a href="cart.html">Đến giỏ hàng</a> |
+          <a href="checkout.html">Thanh toán ngay</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="site-footer"></footer>
+
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+  <script src="js/data.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="js/main.js"></script>
+  <!-- End of product-primary-01.html -->
+</body>
+</html>
